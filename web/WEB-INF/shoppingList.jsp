@@ -8,11 +8,11 @@
     </head>
     <body>
         <h1>Shopping List</h1>
-        <p>Hello ${username}</p>
-        <p><a href="ShoppingList?action=logout">Logout</a></p>
+        <p>Hello, ${username} <a href="ShoppingList?action=logout">Logout</a></p>
         
         <form method="POST" action="">
-            <h2>Add Item</h2>
+            <h2>List</h2>
+            <p>Add item: </p>
             <input type="text" name="item"><input type="submit" value="Add">
             <input type="hidden" name="action" value="add">
         </form>
